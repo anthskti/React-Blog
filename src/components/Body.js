@@ -19,3 +19,5 @@ export default function Body({ sidebar, children }) {
 // props.children is the JSX component tree parented by this component
 
 // file helps state whether the side bar exists or not in the current file.  
+
+// This file helps render the page content without a sidebar. 
