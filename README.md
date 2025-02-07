@@ -1,3 +1,5 @@
+Credits: https://blog.miguelgrinberg.com/post/the-react-mega-tutorial-chapter-3-working-with-components
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

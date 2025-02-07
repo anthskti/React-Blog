@@ -9,6 +9,7 @@ import FeedPage from './pages/FeedPage';
 import ExplorePage from './pages/ExplorePage';
 import LoginPage from './pages/LoginPage';
 import UserPage from './pages/UserPage';
+import ApiProvider from './contexts/ApiProvider';
 
 // goal is to keep app.js simple as possible
 // component names must begin with a capital letter, generally written in CamelCase
@@ -18,13 +19,15 @@ export default function App() {
     <Container fluid className="App">
       <Header />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<FeedPage />} />
-          <Route path="/explore" element={<ExplorePage />} />
-          <Route path="/user/:username" element={<UserPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+      <ApiProvider>
+          <Routes>
+            <Route path="/" element={<FeedPage />} />
+            <Route path="/explore" element={<ExplorePage />} />
+            <Route path="/user/:username" element={<UserPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </ApiProvider>
       </BrowserRouter>
     </Container>
   );
