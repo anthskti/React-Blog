@@ -1,4 +1,5 @@
-Credits: https://blog.miguelgrinberg.com/post/the-react-mega-tutorial-chapter-3-working-with-components
+Thanks to Miguel Grinberg for the Course Tutorial.
+Credits: https://blog.miguelgrinberg.com/post/introducing-the-react-mega-tutorial
 
 # Getting Started with Create React App
 
