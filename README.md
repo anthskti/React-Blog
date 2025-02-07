@@ -32,16 +32,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## For Chapter 5: Backend Connecting
 Use Microblog API from github: https://github.com/miguelgrinberg/microblog-api/blob/main/README.md \
-Using Docker for connecting Flask Backend to React Frontend
+Using Docker for connecting Flask Backend to React Frontend.\
+
+First change the env file to your appropriate API key.\
+To run the application, cmd: docker-compose up -d\
+To add mock users to sqlite, cmd: docker-compose run --rm microblog-api bash -c "flask fake users 10 && flask fake posts 100"\
+To close docker connection, cmd: docker-compose down
